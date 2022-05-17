@@ -30,8 +30,6 @@ class GameTree:
             else:
                 self.v=-1
             return self.v
-        
-
 
         possibilities = self.connect.possible_drops()
         for move in possibilities:
@@ -39,6 +37,7 @@ class GameTree:
             connectCopy.drop_token(move)  
             child = GameTree(connectCopy, self.who, move, self.height+1, self.alfa, self.beta)
             self.children.append(child)
+
             if self.connect.who_moves == self.who:
                 if child.v > self.alfa:
                     self.alfa = child.v
@@ -55,6 +54,7 @@ class GameTree:
         else:
             self.v = max(self.children, key=lambda node: node.v).v
         return self.v
+
     def aprox(self):
         total = 0
         result = 0
@@ -70,13 +70,3 @@ class GameTree:
             total+=5
 
         return result/total
-
-
-class TreeAgent: 
-    def __init__(self, my_token='o'):
-        self.my_token = my_token
-    def decide(self, connect):
-        tree = GameTree(connect, self.my_token)
-        return max(tree.children, key=lambda node: node.v).leadingMove
-
-

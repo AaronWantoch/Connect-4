@@ -1,7 +1,7 @@
 from exceptions import GameplayException
 from connect4 import Connect4
 from randomadent import RandomAgent
-from tree import TreeAgent
+from treeagent import TreeAgent
 
 connect4 = Connect4()
 agent1 = TreeAgent('o') 
