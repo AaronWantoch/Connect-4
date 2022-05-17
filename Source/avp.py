@@ -1,11 +1,10 @@
 from exceptions import GameplayException
 from connect4 import Connect4
-from randomadent import RandomAgent
-from tree import TreeAgent
+from minmax_agent import MinMaxAgent
 
 
 connect4 = Connect4()
-agent = TreeAgent('x')
+agent = MinMaxAgent('x')
 while not connect4.game_over:
     connect4.draw()
     try:
@@ -18,3 +17,4 @@ while not connect4.game_over:
         print('invalid move')
 
 connect4.draw()
+ 

@@ -89,7 +89,7 @@ class Genetic:
 
             # save last values of second_key
             last_values = []
-            for i in range(seq_end_index + 1, len(second_key) - 1):
+            for j in range(seq_end_index + 1, len(second_key) - 1):
                 last_values.append(offspring.pop())
 
             last_values.reverse()
