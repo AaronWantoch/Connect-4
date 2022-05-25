@@ -1,43 +1,40 @@
-from matplotlib import pyplot as plt
-
-from genetic import Genetic
-from utils import generate_random_coords, plot_improvement, plot_route
+from Source.Genetic.utils import simulate_played_games
+from genetic_training import GeneticTraining
 
 
-def genetic(coords, generations=500, population_size=100, elite_size=10, mutation_rate=0.01):
-    genetic = Genetic(coords, population_size=population_size, elite_size=elite_size, mutation_rate=mutation_rate)
+def start_genetic_learning(generations=10, population_size=50, elite_size=5, mutation_rate=0.1):
+    genetic = GeneticTraining(population_size=population_size, elite_size=elite_size, mutation_rate=mutation_rate)
 
     population = genetic.initial_population()
+    #simulate_played_games(population)
+    genetic.play_games(population)
     best_solution = genetic.best_solution(population)
-    steps = [best_solution]
-    for i in range(generations):
+    file.write("\nBest after initial population:")
+    file.write(str(best_solution))
+    file.write("\n\n")
+
+    for i in range(1, generations):
+        print("Generation number:", i)
         population = genetic.next_generation(population)
+        #simulate_played_games(population)
+        genetic.play_games(population)
         best_solution = genetic.best_solution(population)
-        steps.append(best_solution)
-
-    return best_solution, steps
-
-
-# def genetic_for_connect4(moves, generations=500, population_size=100, elite_size=10, mutation_rate=0.01):
-#     genetic_connect = Genetic(moves, population_size=population_size, elite_size=elite_size,
-#                               mutation_rate=mutation_rate)
-#     population = genetic_connect.initial_population()
-#     best_solution = genetic_connect.best_solution(population)
-#     steps = [best_solution]
-#     for i in range(generations):
-#         population = genetic_connect.next_generation(population)
-#         best_solution = genetic_connect.best_solution(population)
-#         steps.append(best_solution)
-#
-#     return best_solution, steps
+        file.write("\nBest after " + str(i) + " generation:")
+        file.write(str(best_solution))
+        file.write("\n\n")
+    file.write("----Finished genetic algorithm----\n")
+    return best_solution
 
 
+if __name__ == '__main__':
+    file = open("genetic_history.txt", "w")
+    print()
+    print("Starting genetic algorithm")
+    file.write("----Starting genetic algorithm----\n")
 
-nb_coords = 25
-coords = generate_random_coords(nb_coords)
-best_solution, steps = genetic(coords)
+    best_solution = start_genetic_learning()
+    print()
+    print("Best agent:", best_solution)
 
-fig, ax = plt.subplots(ncols=2, figsize=(10, 5))
-plot_improvement(ax[0], coords, steps)
-plot_route(ax[1], coords, best_solution)
-plt.show()
+    file.write("\nBest agent:")
+    file.write(str(best_solution))

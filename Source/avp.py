@@ -1,10 +1,12 @@
+from Source.Genetic.minmax_agent_custom import MinMaxCustomAgent
 from exceptions import GameplayException
 from connect4 import Connect4
 from minmax_agent import MinMaxAgent
 
 
 connect4 = Connect4()
-agent = MinMaxAgent('x')
+# agent = MinMaxAgent('x')
+agent = MinMaxCustomAgent('x')
 while not connect4.game_over:
     connect4.draw()
     try:

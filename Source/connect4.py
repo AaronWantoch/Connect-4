@@ -1,8 +1,8 @@
-from exceptions import GameplayException
+from Source.exceptions import GameplayException
 
 
 class Connect4:
-    def __init__(self, width=5, height=5):
+    def __init__(self, width=7, height=6):
         self.width = width
         self.height = height
         self.who_moves = 'o'
