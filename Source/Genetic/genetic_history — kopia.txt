@@ -1,0 +1,1112 @@
+0.2----Starting genetic algorithm----
+
+Best after initial population:
+MinMaxCustomAgent:
+column_multiplier = 10
+my_3 = 21
+enemy_3 = 26
+my_2 = 9
+enemy_2 = -15
+wins = 45
+loses = 4
+
+
+Best after 1 generation:
+MinMaxCustomAgent:
+column_multiplier = 2.5
+my_3 = 10.5
+enemy_3 = 16.0
+my_2 = 1.5
+enemy_2 = 1.0
+wins = 44
+loses = 1
+
+
+Best after 2 generation:
+MinMaxCustomAgent:
+column_multiplier = 10
+my_3 = 21
+enemy_3 = 26
+my_2 = 9
+enemy_2 = -15
+wins = 42
+loses = 6
+
+
+Best after 3 generation:
+MinMaxCustomAgent:
+column_multiplier = 5.3
+my_3 = 18.8
+enemy_3 = 7.8
+my_2 = -1.0
+enemy_2 = -1.8
+wins = 41
+loses = 7
+
+
+Best after 4 generation:
+MinMaxCustomAgent:
+column_multiplier = 5.3
+my_3 = 18.8
+enemy_3 = 7.8
+my_2 = -1.0
+enemy_2 = -1.8
+wins = 43
+loses = 6
+
+
+Best after 5 generation:
+MinMaxCustomAgent:
+column_multiplier = 5.3
+my_3 = 18.8
+enemy_3 = 7.8
+my_2 = -1.0
+enemy_2 = -1.8
+wins = 42
+loses = 7
+
+
+Best after 6 generation:
+MinMaxCustomAgent:
+column_multiplier = 2.5
+my_3 = 10.5
+enemy_3 = 16.0
+my_2 = 1.5
+enemy_2 = 1.0
+wins = 40
+loses = 6
+
+
+Best after 7 generation:
+MinMaxCustomAgent:
+column_multiplier = 1.1
+my_3 = 11.4
+enemy_3 = 8.4
+my_2 = 0.9
+enemy_2 = -5.4
+wins = 39
+loses = 9
+
+
+Best after 8 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.5
+my_3 = 11.6
+enemy_3 = 6.1
+my_2 = 2.2
+enemy_2 = -5.0
+wins = 42
+loses = 7
+
+
+Best after 9 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.4
+enemy_3 = 5.0
+my_2 = 2.0
+enemy_2 = -4.3
+wins = 42
+loses = 6
+
+
+Best after 10 generation:
+MinMaxCustomAgent:
+column_multiplier = 1.1
+my_3 = 11.4
+enemy_3 = 9.1
+my_2 = 3.2
+enemy_2 = -6.5
+wins = 43
+loses = 6
+
+
+Best after 11 generation:
+MinMaxCustomAgent:
+column_multiplier = 1.1
+my_3 = 11.4
+enemy_3 = 9.1
+my_2 = 3.2
+enemy_2 = -6.5
+wins = 43
+loses = 6
+
+
+Best after 12 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.6
+enemy_3 = 5.0
+my_2 = 2.2
+enemy_2 = -4.6
+wins = 37
+loses = 8
+
+
+Best after 13 generation:
+MinMaxCustomAgent:
+column_multiplier = 1.1
+my_3 = 11.4
+enemy_3 = 9.1
+my_2 = 3.2
+enemy_2 = -6.5
+wins = 43
+loses = 6
+
+
+Best after 14 generation:
+MinMaxCustomAgent:
+column_multiplier = 1.1
+my_3 = 11.4
+enemy_3 = 9.1
+my_2 = 3.2
+enemy_2 = -6.5
+wins = 43
+loses = 6
+
+
+Best after 15 generation:
+MinMaxCustomAgent:
+column_multiplier = 1.1
+my_3 = 11.4
+enemy_3 = 9.1
+my_2 = 3.2
+enemy_2 = -6.5
+wins = 42
+loses = 7
+
+
+Best after 16 generation:
+MinMaxCustomAgent:
+column_multiplier = 1.1
+my_3 = 11.4
+enemy_3 = 9.1
+my_2 = 3.2
+enemy_2 = -6.5
+wins = 44
+loses = 5
+
+
+Best after 17 generation:
+MinMaxCustomAgent:
+column_multiplier = 1.1
+my_3 = 11.4
+enemy_3 = 9.1
+my_2 = 3.2
+enemy_2 = -6.5
+wins = 44
+loses = 5
+
+
+Best after 18 generation:
+MinMaxCustomAgent:
+column_multiplier = 1.1
+my_3 = 11.4
+enemy_3 = 9.1
+my_2 = 3.2
+enemy_2 = -6.5
+wins = 40
+loses = 9
+
+
+Best after 19 generation:
+MinMaxCustomAgent:
+column_multiplier = 1.1
+my_3 = 11.4
+enemy_3 = 9.1
+my_2 = 3.2
+enemy_2 = -6.5
+wins = 38
+loses = 11
+
+
+Best after 20 generation:
+MinMaxCustomAgent:
+column_multiplier = 1.1
+my_3 = 11.4
+enemy_3 = 9.1
+my_2 = 3.2
+enemy_2 = -6.5
+wins = 37
+loses = 12
+
+
+Best after 21 generation:
+MinMaxCustomAgent:
+column_multiplier = 1.1
+my_3 = 11.4
+enemy_3 = 9.1
+my_2 = 3.2
+enemy_2 = -6.5
+wins = 41
+loses = 8
+
+
+Best after 22 generation:
+MinMaxCustomAgent:
+column_multiplier = 1.1
+my_3 = 11.4
+enemy_3 = 9.1
+my_2 = 3.2
+enemy_2 = -6.5
+wins = 48
+loses = 1
+
+
+Best after 23 generation:
+MinMaxCustomAgent:
+column_multiplier = 1.1
+my_3 = 11.4
+enemy_3 = 9.1
+my_2 = 3.2
+enemy_2 = -6.5
+wins = 49
+loses = 0
+
+
+Best after 24 generation:
+MinMaxCustomAgent:
+column_multiplier = 1.1
+my_3 = 11.4
+enemy_3 = 9.1
+my_2 = 3.2
+enemy_2 = -6.5
+wins = 48
+loses = 1
+
+
+Best after 25 generation:
+MinMaxCustomAgent:
+column_multiplier = 1.1
+my_3 = 11.4
+enemy_3 = 9.1
+my_2 = 3.2
+enemy_2 = -6.5
+wins = 48
+loses = 1
+
+
+Best after 26 generation:
+MinMaxCustomAgent:
+column_multiplier = 1.1
+my_3 = 11.4
+enemy_3 = 9.1
+my_2 = 3.2
+enemy_2 = -6.5
+wins = 48
+loses = 1
+
+
+Best after 27 generation:
+MinMaxCustomAgent:
+column_multiplier = 1.1
+my_3 = 11.4
+enemy_3 = 9.1
+my_2 = 3.2
+enemy_2 = -6.5
+wins = 49
+loses = 0
+
+
+Best after 28 generation:
+MinMaxCustomAgent:
+column_multiplier = 1.1
+my_3 = 11.4
+enemy_3 = 9.1
+my_2 = 3.2
+enemy_2 = -6.5
+wins = 49
+loses = 0
+
+
+Best after 29 generation:
+MinMaxCustomAgent:
+column_multiplier = 1.1
+my_3 = 11.4
+enemy_3 = 9.1
+my_2 = 3.2
+enemy_2 = -6.5
+wins = 49
+loses = 0
+
+
+Best after 30 generation:
+MinMaxCustomAgent:
+column_multiplier = 1.1
+my_3 = 11.4
+enemy_3 = 9.1
+my_2 = 3.2
+enemy_2 = -6.5
+wins = 49
+loses = 0
+
+
+Best after 31 generation:
+MinMaxCustomAgent:
+column_multiplier = 1.1
+my_3 = 11.4
+enemy_3 = 9.1
+my_2 = 3.2
+enemy_2 = -6.5
+wins = 49
+loses = 0
+
+
+Best after 32 generation:
+MinMaxCustomAgent:
+column_multiplier = 1.1
+my_3 = 11.4
+enemy_3 = 9.1
+my_2 = 3.2
+enemy_2 = -6.5
+wins = 48
+loses = 1
+
+
+Best after 33 generation:
+MinMaxCustomAgent:
+column_multiplier = 1.1
+my_3 = 11.4
+enemy_3 = 9.1
+my_2 = 3.2
+enemy_2 = -6.5
+wins = 47
+loses = 2
+
+
+Best after 34 generation:
+MinMaxCustomAgent:
+column_multiplier = 1.1
+my_3 = 11.4
+enemy_3 = 9.1
+my_2 = 3.2
+enemy_2 = -6.5
+wins = 43
+loses = 6
+
+
+Best after 35 generation:
+MinMaxCustomAgent:
+column_multiplier = 1.1
+my_3 = 11.4
+enemy_3 = 9.1
+my_2 = 3.2
+enemy_2 = -6.5
+wins = 39
+loses = 10
+
+
+Best after 36 generation:
+MinMaxCustomAgent:
+column_multiplier = 1.1
+my_3 = 11.4
+enemy_3 = 9.1
+my_2 = 3.2
+enemy_2 = -6.5
+wins = 40
+loses = 9
+
+
+Best after 37 generation:
+MinMaxCustomAgent:
+column_multiplier = 1.1
+my_3 = 11.4
+enemy_3 = 9.1
+my_2 = 3.2
+enemy_2 = -6.5
+wins = 38
+loses = 11
+
+
+Best after 38 generation:
+MinMaxCustomAgent:
+column_multiplier = 1.1
+my_3 = 11.4
+enemy_3 = 9.1
+my_2 = 3.2
+enemy_2 = -6.5
+wins = 33
+loses = 16
+
+
+Best after 39 generation:
+MinMaxCustomAgent:
+column_multiplier = 1.1
+my_3 = 11.4
+enemy_3 = 9.1
+my_2 = 3.2
+enemy_2 = -6.5
+wins = 37
+loses = 12
+
+
+Best after 40 generation:
+MinMaxCustomAgent:
+column_multiplier = 1.1
+my_3 = 11.4
+enemy_3 = 9.1
+my_2 = 3.2
+enemy_2 = -6.5
+wins = 37
+loses = 12
+
+
+Best after 41 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 33
+loses = 16
+
+
+Best after 42 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 33
+loses = 16
+
+
+Best after 43 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.3
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 33
+loses = 16
+
+
+Best after 44 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.3
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 33
+loses = 16
+
+
+Best after 45 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 32
+loses = 17
+
+
+Best after 46 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 32
+loses = 17
+
+
+Best after 47 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 31
+loses = 18
+
+
+Best after 48 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 31
+loses = 18
+
+
+Best after 49 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 31
+loses = 18
+
+
+Best after 50 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 30
+loses = 19
+
+
+Best after 51 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 31
+loses = 18
+
+
+Best after 52 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 31
+loses = 18
+
+
+Best after 53 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 33
+loses = 16
+
+
+Best after 54 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 31
+loses = 18
+
+
+Best after 55 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 30
+loses = 19
+
+
+Best after 56 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 33
+loses = 16
+
+
+Best after 57 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 31
+loses = 18
+
+
+Best after 58 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 34
+loses = 15
+
+
+Best after 59 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 32
+loses = 17
+
+
+Best after 60 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 32
+loses = 17
+
+
+Best after 61 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 33
+loses = 16
+
+
+Best after 62 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 32
+loses = 17
+
+
+Best after 63 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 34
+loses = 15
+
+
+Best after 64 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 33
+loses = 16
+
+
+Best after 65 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 34
+loses = 15
+
+
+Best after 66 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 32
+loses = 17
+
+
+Best after 67 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 30
+loses = 19
+
+
+Best after 68 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 33
+loses = 16
+
+
+Best after 69 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 32
+loses = 17
+
+
+Best after 70 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 33
+loses = 16
+
+
+Best after 71 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 31
+loses = 18
+
+
+Best after 72 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 32
+loses = 17
+
+
+Best after 73 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 32
+loses = 17
+
+
+Best after 74 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 32
+loses = 17
+
+
+Best after 75 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 31
+loses = 18
+
+
+Best after 76 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 33
+loses = 16
+
+
+Best after 77 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 34
+loses = 15
+
+
+Best after 78 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 31
+loses = 18
+
+
+Best after 79 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 34
+loses = 15
+
+
+Best after 80 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 35
+loses = 14
+
+
+Best after 81 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 34
+loses = 15
+
+
+Best after 82 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 35
+loses = 14
+
+
+Best after 83 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 32
+loses = 17
+
+
+Best after 84 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 31
+loses = 18
+
+
+Best after 85 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 34
+loses = 15
+
+
+Best after 86 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 32
+loses = 17
+
+
+Best after 87 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 34
+loses = 15
+
+
+Best after 88 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 31
+loses = 18
+
+
+Best after 89 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 31
+loses = 18
+
+
+Best after 90 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 32
+loses = 17
+
+
+Best after 91 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 30
+loses = 19
+
+
+Best after 92 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 34
+loses = 15
+
+
+Best after 93 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 35
+loses = 14
+
+
+Best after 94 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 31
+loses = 18
+
+
+Best after 95 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 32
+loses = 17
+
+
+Best after 96 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 35
+loses = 14
+
+
+Best after 97 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 33
+loses = 16
+
+
+Best after 98 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 34
+loses = 15
+
+
+Best after 99 generation:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 33
+loses = 16
+
+----Finished genetic algorithm----
+
+Best agent:
+MinMaxCustomAgent:
+column_multiplier = 0.2
+my_3 = 10.9
+enemy_3 = 5.2
+my_2 = 2.2
+enemy_2 = -4.8
+wins = 33
+loses = 16

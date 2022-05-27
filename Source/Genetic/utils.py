@@ -25,3 +25,28 @@ def set_tokens(agent1, agent2):
     guess.remove(choice)
     agent2.my_token = guess[0]
 
+# checks if s is subset of l
+def is_slice_in_list(s,l):
+    len_s = len(s) #so we don't recompute length of s on every iteration
+    return any(s == l[i:len_s+i] for i in range(len(l) - len_s+1))
+
+
+
+
+    # if four.count(self.token) == 3 and four.count('_') == 1:
+    #     score += self.agent.my_3
+    # elif four.count(self.token) == 2 and four.count('_') >= 1:
+    #     score += self.agent.my_2
+    #
+    # # check for enemy's threes and twos
+    # if four.count(enemy) == 3 and four.count('_') == 1:
+    #     score += self.agent.enemy_3
+    # elif four.count(enemy) == 2 and four.count('_') >= 1:
+    #     score += self.agent.enemy_2
+
+    # # check for unblocked twos
+    # if four == ['_', self.token, self.token, '_']:
+    #     score += 300
+    # elif four == ['_', enemy, enemy, '_']:
+    #     score -= 300
+

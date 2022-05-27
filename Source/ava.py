@@ -5,9 +5,11 @@ from minmax_agent import MinMaxAgent
 from random_agent import RandomAgent
 
 connect4 = Connect4()
-agent1 = MinMaxCustomAgent('x', 1.5, 3.8, -1.9, 0.2, -0.9)
+# mój chad agent
+agent1 = MinMaxCustomAgent('o', 0.9, 9.2, 5.3, 0.5, -3.0, 1.9 )
 
-agent2 = MinMaxCustomAgent('o')
+# zwykły virgin grajek
+agent2 = MinMaxCustomAgent('x')
 
 while not connect4.game_over:
     connect4.draw()

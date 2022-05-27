@@ -2,11 +2,10 @@ from Source.Genetic.utils import simulate_played_games
 from genetic_training import GeneticTraining
 
 
-def start_genetic_learning(generations=10, population_size=50, elite_size=5, mutation_rate=0.1):
+def start_genetic_learning(generations=150, population_size=50, elite_size=5, mutation_rate=0.1):
     genetic = GeneticTraining(population_size=population_size, elite_size=elite_size, mutation_rate=mutation_rate)
 
     population = genetic.initial_population()
-    #simulate_played_games(population)
     genetic.play_games(population)
     best_solution = genetic.best_solution(population)
     file.write("\nBest after initial population:")
@@ -16,7 +15,6 @@ def start_genetic_learning(generations=10, population_size=50, elite_size=5, mut
     for i in range(1, generations):
         print("Generation number:", i)
         population = genetic.next_generation(population)
-        #simulate_played_games(population)
         genetic.play_games(population)
         best_solution = genetic.best_solution(population)
         file.write("\nBest after " + str(i) + " generation:")

@@ -20,9 +20,10 @@ class GeneticTraining:
             enemy_3 = random.randint(-30, 30)
             my_2 = random.randint(-30, 30)
             enemy_2 = random.randint(-30, 30)
+            enemy_unguarded2 = random.randint(-40, 40)
 
             # create agent with randomized values
-            agent = MinMaxCustomAgent('', mid_column_multiplier, my_3, enemy_3, my_2, enemy_2)
+            agent = MinMaxCustomAgent('', mid_column_multiplier, my_3, enemy_3, my_2, enemy_2, enemy_unguarded2)
             # add him to population list
             population.append(agent)
 
@@ -129,15 +130,16 @@ class GeneticTraining:
             first_key = random.choice(population)
             second_key = random.choice(population)
 
-            column_multiplier = round((first_key.column_multiplier + second_key.column_multiplier) / 2,1)
-            my_3 = round((first_key.my_3 + second_key.my_3) / 2,1)
-            enemy_3 = round((first_key.enemy_3 + second_key.enemy_3) / 2,1)
+            column_multiplier = round((first_key.column_multiplier + second_key.column_multiplier) / 2, 1)
+            my_3 = round((first_key.my_3 + second_key.my_3) / 2, 1)
+            enemy_3 = round((first_key.enemy_3 + second_key.enemy_3) / 2, 1)
 
-            my_2 = round((first_key.my_2 + second_key.my_2) / 2,1)
-            enemy_2 = round((first_key.enemy_2 + second_key.enemy_2) / 2,1)
+            my_2 = round((first_key.my_2 + second_key.my_2) / 2, 1)
+            enemy_2 = round((first_key.enemy_2 + second_key.enemy_2) / 2, 1)
+            enemy_unguarded2 = round((first_key.enemy_unguarded2 + second_key.enemy_unguarded2) / 2, 1)
 
             # child has average of his parents values
-            child = MinMaxCustomAgent('', column_multiplier, my_3, enemy_3, my_2, enemy_2)
+            child = MinMaxCustomAgent('', column_multiplier, my_3, enemy_3, my_2, enemy_2, enemy_unguarded2)
 
             after_crossover.append(child)
 
@@ -155,14 +157,15 @@ class GeneticTraining:
                 mutated = random.choice(population)
 
                 available_mutations = [mutated.column_multiplier, mutated.my_3, mutated.enemy_3, mutated.my_2,
-                                       mutated.enemy_2]
+                                       mutated.enemy_2, mutated.enemy_unguarded2]
 
                 mutated_times = random.randint(0, len(available_mutations))
 
                 for j in range(mutated_times):
                     mutation_multiplier = random.uniform(0.80, 1.20)
                     mutated_index = random.randint(0, len(available_mutations) - 1)
-                    available_mutations[mutated_index] = round(available_mutations[mutated_index]*mutation_multiplier,1)
+                    available_mutations[mutated_index] = round(available_mutations[mutated_index] *
+                                                               mutation_multiplier, 1)
         return population
 
     def next_generation(self, population):

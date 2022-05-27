@@ -104,3 +104,4 @@ class MinMax:
     def choose_best_move(self):
         score, move = self.choose_move()
         return move
+
