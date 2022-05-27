@@ -1,4 +1,4 @@
-from Source.exceptions import GameplayException
+from exceptions import GameplayException
 
 
 class Connect4:

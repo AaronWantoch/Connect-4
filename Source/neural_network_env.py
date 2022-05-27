@@ -10,9 +10,12 @@ class Connect4Enviorment(Env):
         self.game = connect
         self.token = token
 
-        self.observation_shape = (self.game.height, self.game.width, 3) # maybe add ,3 add the end
-        self.observation_space = spaces.Discrete(self.game.height * self.game.width)
-        self.action_space = DynamicActionsSpace(self.game.possible_drops())
+        # Define a 2-D observation space
+        self.observation_shape = (self.game.height, self.game.width, 1)
+        self.observation_space = spaces.Box(low=-np.ones(self.observation_shape),
+                                            high=np.ones(self.observation_shape),
+                                            dtype=np.int8)
+        self.action_space = spaces.Discrete(self.game.width)
 
 
     def reset(self, **kwargs):
@@ -38,4 +41,4 @@ class Connect4Enviorment(Env):
 
         self.action_space = DynamicActionsSpace(self.game.possible_drops())
 
-        return self.game, reward, done, []
+        return self.observation_space, reward, done, []
