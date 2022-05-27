@@ -1,6 +1,6 @@
 from exceptions import GameplayException
 from connect4 import Connect4
-from randomadent import RandomAgent
+from random_agent import RandomAgent
 from treeagent import TreeAgent
 
 connect4 = Connect4()
