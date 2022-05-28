@@ -12,16 +12,19 @@ class Connect4Enviorment(Env):
 
         # Define a 2-D observation space
         self.observation_shape = (self.game.height, self.game.width, 1)
-        self.observation_space = spaces.Box(low=-np.ones(self.observation_shape),
-                                            high=np.ones(self.observation_shape),
-                                            dtype=np.int8)
+        self.observation_space = spaces.Dict({
+            'board': spaces.Box(low=-1, high=1, shape=(self.game.height, self.game.width), dtype=np.uint8)
+            })
         self.action_space = spaces.Discrete(self.game.width)
+
 
 
     def reset(self, **kwargs):
         # return the observation
         self.game = Connect4(self.game.width, self.game.height)
-        return Connect4()
+        self.canvas = {0: np.zeros(self.observation_shape)[:, :, 0]}
+
+        return self.canvas
 
     def render(self, mode="human"):
         self.game.draw()
@@ -41,4 +44,4 @@ class Connect4Enviorment(Env):
 
         self.action_space = DynamicActionsSpace(self.game.possible_drops())
 
-        return self.observation_space, reward, done, []
+        return self.canvas, reward, done, []
