@@ -21,12 +21,21 @@ class Connect4:
         if n_column not in self.possible_drops():
             raise GameplayException('invalid move')
 
-        n_row = 0
-        while n_row + 1 < self.height and self.board[n_row + 1][n_column] == '_':
-            n_row += 1
+        n_row = self.get_row(n_column)
         self.board[n_row][n_column] = self.who_moves
         self.game_over = self.check_game_over()
         self.who_moves = 'o' if self.who_moves == 'x' else 'x'
+
+    def get_row(self, column):
+        if self.game_over:
+            raise GameplayException('game over')
+        if column not in self.possible_drops():
+            raise GameplayException('invalid move')
+
+        n_row = 0
+        while n_row + 1 < self.height and self.board[n_row + 1][column] == '_':
+            n_row += 1
+        return n_row
 
     def center_column(self):
         return [self.board[n_row][self.width // 2] for n_row in range(self.height)]
