@@ -16,12 +16,11 @@ class RLAgent:
 
     def build_model(self):
         model = Sequential()
-        #model.add(Conv2D(128, (4, 4), input_shape=(1, self.game.height, self.game.width, 1), activation='relu'))
+        model.add(Conv2D(128, (4, 4), input_shape=(1, self.game.height, self.game.width, 1), activation='relu'))
 
-        model.add(Flatten(input_shape=(1, self.game.height, self.game.width)))
-        model.add(Dense(self.game.height * self.game.width, activation='relu'))
+        model.add(Flatten())
         model.add(Dense(64, activation='relu'))
-        model.add(Dense(16, activation='relu'))
+        model.add(Dense(64, activation='relu'))
         model.add(Dense(self.env.action_space.n, activation='linear'))
 
         self.model = model
@@ -34,4 +33,4 @@ class RLAgent:
 
     def train(self):
         self.dqn.compile(Adam(lr=1e-3), metrics=['mae'])
-        self.dqn.fit(self.env, nb_steps=10000, visualize=True, verbose=1)
+        self.dqn.fit(self.env, nb_steps=100000, visualize=True, verbose=1)

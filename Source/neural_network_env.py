@@ -2,13 +2,14 @@ import gym
 import numpy as np
 from gym import Env, spaces
 from connect4 import Connect4
+from minmax_agent import MinMaxAgent
 from dynamic_actions import DynamicActionsSpace
 from random_agent import RandomAgent
 
 class Connect4Enviorment(Env):
-    ILLEGAL_MOVE_REWARD = -10
-    WON_REWARD = 1
-    LOST_REWARD = -1
+    ILLEGAL_MOVE_REWARD = -20
+    WON_REWARD = 5
+    LOST_REWARD = -5
     DRAW_REWARD = 0
     STEP_REWARD = 0
 
@@ -19,13 +20,13 @@ class Connect4Enviorment(Env):
         self.token = token
 
         # Define a 2-D observation space
-        self.observation_shape = (self.game.height, self.game.width)
+        self.observation_shape = (self.game.height, self.game.width, 1)
         self.observation_space = spaces.Box(low=-1, high=1, shape=self.observation_shape, dtype=np.uint8)
 
         self.action_space = spaces.Discrete(self.game.width)
-        #self.canvas = np.zeros((1, self.game.height, self.game.width, 1))[0, :, :, :]
+        self.canvas = np.zeros(self.observation_shape)
 
-        self.opponent_agent = RandomAgent('x')
+        self.opponent_agent = MinMaxAgent('x')
 
         self.total_games = 0
         self.games_won = 0
