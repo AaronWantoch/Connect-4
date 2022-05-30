@@ -11,9 +11,9 @@ connect4 = Connect4()
 # zwykły virgin grajek
 #agent2 = MinMaxCustomAgent('x')
 
-#agent1 = MinMaxCustomAgent("x")
-agent1 = RandomAgent("x")
-agent2 = MonteCarlo_Agent("o")
+agent1 = MonteCarlo_Agent("o")
+#agent1 = RandomAgent("x")
+agent2 = MinMaxCustomAgent('x', 0.9, 9.2, 5.3, 0.5, -3.0, 1.9 )
 
 while not connect4.game_over:
     connect4.draw()
@@ -22,9 +22,8 @@ while not connect4.game_over:
             n_column = agent1.decide(connect4)
         else:
             n_column = agent2.decide(connect4)
-            print(n_column)
         connect4.drop_token(n_column)
     except (ValueError, GameplayException):
-        print('invalid move')
+        pass
 
 connect4.draw()

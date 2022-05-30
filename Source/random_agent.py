@@ -1,7 +1,7 @@
 import random
 import sys
 
-from exceptions import AgentException
+from Source.exceptions import AgentException
 
 class RandomAgent:
     def __init__(self, my_token='o'):

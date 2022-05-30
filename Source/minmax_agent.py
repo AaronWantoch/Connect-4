@@ -1,8 +1,8 @@
 import random
-from min_max import MinMax
+from Source.min_max import MinMax
 import sys
 
-from exceptions import AgentException
+from Source.exceptions import AgentException
 
 
 class MinMaxAgent:

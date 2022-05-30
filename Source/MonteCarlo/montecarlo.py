@@ -13,7 +13,7 @@ class MonteCarlo:
         self.simulation.board = copy.deepcopy(connect.board)
         self.simulation.who_moves = myToken
         self.myToken = myToken
-        self.limit = 4
+        self.limit = 10000000
 
 
     def final_decision(self, root):
@@ -41,10 +41,10 @@ class MonteCarlo:
                         maxUCB1Child = c
                         maxUCB1 = ucb1
                 self.simulation.drop_token(maxUCB1Child.actionIndex)
-                if self.game.wins == self.myToken:
+                if self.simulation.game_over:
                     return self.final_decision( root)
                 self.simulation.drop_token(random.choice(self.simulation.possible_drops()))
-                if self.game.wins == self.myToken:
+                if self.simulation.game_over:
                     return self.final_decision( root)
                 return self.choose_move(maxUCB1Child, limit, root)
 
@@ -58,10 +58,10 @@ class MonteCarlo:
                 else:
                     current.expantion(self.game.possible_drops())
                     self.simulation.drop_token(self.game.possible_drops()[0])
-                    if self.game.wins == self.myToken:
+                    if self.simulation.game_over:
                         return self.final_decision(root)
                     self.simulation.drop_token(random.choice(self.simulation.possible_drops()))
-                    if self.game.wins == self.myToken:
+                    if self.simulation.game_over:
                         return self.final_decision(root)
                     return self.choose_move(current.children[0], limit, root)
         else:

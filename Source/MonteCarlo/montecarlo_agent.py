@@ -12,5 +12,4 @@ class MonteCarlo_Agent:
         else:
             monteCarlo = MonteCarlo(connect4, self.my_token)
             move = monteCarlo.choose_best_move()
-            print(move.__class__)
             return move

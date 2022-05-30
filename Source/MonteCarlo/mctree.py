@@ -29,7 +29,7 @@ class MCTree:
             connect4.drop_token(random.choice(connect4.possible_drops()))
 
         if connect4.wins == myToken:
-            return 10
+            return 100
         elif connect4.wins != myToken:
             return -10
         else:
