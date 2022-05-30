@@ -33,4 +33,4 @@ class RLAgent:
 
     def train(self):
         self.dqn.compile(Adam(lr=1e-3), metrics=['mae'])
-        self.dqn.fit(self.env, nb_steps=100000, visualize=True, verbose=1)
+        self.dqn.fit(self.env, nb_steps=10000, visualize=True, verbose=1)

@@ -1,7 +1,7 @@
 import sys
 import copy
 
-from Source.Genetic.utils import is_slice_in_list
+from Genetic.utils import is_slice_in_list
 
 
 class MinMaxCustom:

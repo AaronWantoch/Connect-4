@@ -1,5 +1,5 @@
-from Source.exceptions import AgentException
-from Source.Genetic.min_max_custom import MinMaxCustom
+from exceptions import AgentException
+from Genetic.min_max_custom import MinMaxCustom
 
 
 class MinMaxCustomAgent:

@@ -7,14 +7,14 @@ from dynamic_actions import DynamicActionsSpace
 from random_agent import RandomAgent
 
 class Connect4Enviorment(Env):
-    ILLEGAL_MOVE_REWARD = -20
-    WON_REWARD = 5
+    ILLEGAL_MOVE_REWARD = -10
+    WON_REWARD = 20
     LOST_REWARD = -5
     DRAW_REWARD = 0
     STEP_REWARD = 0
 
     # TODO: make canvas depend on board
-    def __init__(self, connect, token):
+    def __init__(self, connect, token, opponent_agent):
         super(Connect4Enviorment, self).__init__()
         self.game = connect
         self.token = token
@@ -26,7 +26,7 @@ class Connect4Enviorment(Env):
         self.action_space = spaces.Discrete(self.game.width)
         self.canvas = np.zeros(self.observation_shape)
 
-        self.opponent_agent = MinMaxAgent('x')
+        self.opponent_agent = opponent_agent
 
         self.total_games = 0
         self.games_won = 0
@@ -54,29 +54,31 @@ class Connect4Enviorment(Env):
     def step(self, action):
         # TODO: Make it possible to play as second player
         # Make move for nn agent
-        if action not in self.game.possible_drops():
-            return self.canvas, Connect4Enviorment.ILLEGAL_MOVE_REWARD, False, {}
+        for i in range(2):
+            if self.game.who_moves == self.token:
+                if action not in self.game.possible_drops():
+                    return self.canvas, Connect4Enviorment.ILLEGAL_MOVE_REWARD, False, {}
 
-        self.update_canvas(action, 1)
-        self.game.drop_token(action)
+                self.update_canvas(action, 1)
+                self.game.drop_token(action)
 
-        # Check if he won
-        if self.game.game_over:
-            if self.game.wins == self.token:
-                return self.canvas, Connect4Enviorment.WON_REWARD, True, {}
+                # Check if he won
+                if self.game.game_over:
+                    if self.game.wins == self.token:
+                        return self.canvas, Connect4Enviorment.WON_REWARD, True, {}
+                    else:
+                        return self.canvas, Connect4Enviorment.DRAW_REWARD, True, {}
             else:
-                return self.canvas, Connect4Enviorment.DRAW_REWARD, True, {}
-
-        # Make move for opponent
-        decision = self.opponent_agent.decide(self.game)
-        self.update_canvas(decision, -1)
-        self.game.drop_token(decision)
-        # Check if agent lost
-        if self.game.game_over:
-            if self.game.wins is not None:
-                return self.canvas, Connect4Enviorment.LOST_REWARD, True, {}
-            else:
-                return self.canvas, Connect4Enviorment.DRAW_REWARD, True, {}
+                # Make move for opponent
+                decision = self.opponent_agent.decide(self.game)
+                self.update_canvas(decision, -1)
+                self.game.drop_token(decision)
+                # Check if agent lost
+                if self.game.game_over:
+                    if self.game.wins is not None:
+                        return self.canvas, Connect4Enviorment.LOST_REWARD, True, {}
+                    else:
+                        return self.canvas, Connect4Enviorment.DRAW_REWARD, True, {}
 
         return self.canvas, Connect4Enviorment.STEP_REWARD, False, {}
 
