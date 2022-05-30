@@ -6,11 +6,11 @@ from random_agent import RandomAgent
 from Genetic.minmax_custom_agent import MinMaxCustomAgent
 
 connect4 = Connect4(7, 6)
-env = Connect4Enviorment(connect4, 'x', MinMaxCustomAgent('o', 0.9, 9.2, 5.3, 0.5, -3.0, 1.9))
+env = Connect4Enviorment(connect4, 'o', MinMaxCustomAgent('x'))
 
 rl_agent = RLAgent(connect4, env)
-rl_agent.train()
-
+rl_agent.train(10000)
+rl_agent.save_model()
 
 
 env.close()

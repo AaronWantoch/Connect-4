@@ -2,6 +2,7 @@ import numpy as np
 from keras.models import Sequential
 from keras.layers import Dense, Flatten, Conv2D, Activation
 from keras.optimizers import Adam
+from keras.models import model_from_json
 
 from rl.agents import DQNAgent
 from rl.policy import BoltzmannQPolicy
@@ -31,6 +32,30 @@ class RLAgent:
         self.dqn = DQNAgent(model=self.model, memory=memory, policy=policy,
                             nb_actions=self.env.action_space.n, nb_steps_warmup=10, target_model_update=1e-2)
 
-    def train(self):
+    def train(self, steps):
         self.dqn.compile(Adam(lr=1e-3), metrics=['mae'])
-        self.dqn.fit(self.env, nb_steps=10000, visualize=True, verbose=1)
+        self.dqn.fit(self.env, nb_steps=steps, visualize=True, verbose=1)
+
+    def save_model(self):
+        # serialize model to JSON
+        model_json = self.model.to_json()
+        with open("NeuralNetwork/model.json", "w") as json_file:
+            json_file.write(model_json)
+        # serialize weights to HDF5
+        self.dqn.save_weights("NeuralNetwork/model.h5", overwrite=True)
+        print("Saved model to disk")
+
+    def load_model(self):
+        # load json and create model
+        json_file = open('NeuralNetwork/model.json', 'r')
+        loaded_model_json = json_file.read()
+        json_file.close()
+        loaded_model = model_from_json(loaded_model_json)
+        # load weights into new model
+        loaded_model.load_weights("NeuralNetwork/model.h5")
+        self.model = loaded_model
+        print("Loaded model from disk")
+
+        # evaluate loaded model on test data
+        self.build_agent()
+        self.dqn.compile(Adam(lr=1e-3), metrics=['mae'])

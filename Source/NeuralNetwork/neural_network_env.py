@@ -8,7 +8,7 @@ from random_agent import RandomAgent
 
 class Connect4Enviorment(Env):
     ILLEGAL_MOVE_REWARD = -10
-    WON_REWARD = 20
+    WON_REWARD = 10
     LOST_REWARD = -5
     DRAW_REWARD = 0
     STEP_REWARD = 0
