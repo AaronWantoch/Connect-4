@@ -1,4 +1,4 @@
-from Source.Genetic.minmax_agent_custom import MinMaxCustomAgent
+from Source.Genetic.minmax_custom_agent import MinMaxCustomAgent
 from exceptions import GameplayException
 from connect4 import Connect4
 from minmax_agent import MinMaxAgent
